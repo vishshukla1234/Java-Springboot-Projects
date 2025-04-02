@@ -24,12 +24,12 @@ MySQL Database - Storage
 
 # API Endpoints
 # Method	      Endpoint	                         Description
-   GET	       /accounts	                   Get all account details
+   GET	       /accounts	        ->           Get all account details
    
-   POST	       /accounts	                   Create a new account
+   POST	       /accounts	        ->           Create a new account
    
-   PUT	      /accounts/{id}/deposit	       Deposit money
+   PUT	      /accounts/{id}/deposit	   ->    Deposit money
    
-   PUT	      /accounts/{id}/withdraw	       Withdraw money
+   PUT	      /accounts/{id}/withdraw	   ->    Withdraw money
    
-  DELETE	    /accounts/{id}/delete	         Delete an account
+  DELETE	    /accounts/{id}/delete	   ->      Delete an account
