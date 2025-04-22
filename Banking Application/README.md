@@ -3,7 +3,8 @@ This is a simple banking application built using Spring Boot. It provides RESTfu
 
 ## Banking Application Architechture
 Here's a quick overview of accounts in MySQL database
-![Alt text](Screenshot 2025-04-02 130728.png)
+![image](https://github.com/user-attachments/assets/e3d59699-3ea5-45a1-a0dc-0afa6d69ac3b)
+
 
 ## Features
 Create Account - Add a new bank account.
