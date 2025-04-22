@@ -1,7 +1,7 @@
-Banking Application - Spring Boot
+## Banking Application - Spring Boot
 This is a simple banking application built using Spring Boot. It provides RESTful APIs to perform basic banking operations like account creation, deletion, deposit, and withdrawal.
 
-Banking Application Architechture
+### Banking Application Architechture
 Here's a quick overview of accounts in MySQL database
 ![Alt text](Screenshot 2025-04-02 130728.png)
 
