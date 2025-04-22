@@ -4,10 +4,12 @@ This is a simple file compressor built using Spring Boot. It provides RESTful AP
 
 ### Features
 Compression - Compresses a text file.
+
 Decompression - Decompresses a file into it's original format.
 
 ### Technologies Used
 Spring Boot - Backend framework
+
 Spring MVC - RESTful API handling
 
 ### API Endpoints
