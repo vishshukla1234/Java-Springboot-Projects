@@ -1,38 +1,30 @@
-# Banking Application - Spring Boot
-This is a simple banking application built using Spring Boot. It provides RESTful APIs to perform basic banking operations like account creation, deletion, deposit, and withdrawal.
+# Spring Boot Projects Repository
 
-# Banking Application Architechture
-![Here's a quick overview of accounts in MySQL database](https://github.com/vishshukla1234/Spring-boot/blob/main/Screenshot%202025-04-02%20130728.png)
+Welcome to my **Spring Boot Projects Repository**! This repository contains multiple backend-only Java applications built with **Spring Boot**, each focusing on different concepts such as REST APIs, decompression, compression, etc.
 
-# Features
-Create Account - Add a new bank account.
+## Projects Included
 
-Delete Account - Remove an existing account.
+This repository includes multiple sub-projects. Each one is located in its own folder with a dedicated `README.md` that explains its purpose, structure.
 
-Deposit Money - Add funds to an account.
+- `Banking Application` – e.g., Banking System API using Spring Boot
+- `FileCompressor` – e.g., File Compression with Huffman Coding Algorithm
 
-Withdraw Money - Deduct funds from an account.
+## Tech Stack
 
-View Account Details - Retrieve account information.
+### Languages & Frameworks
+Java 17+ – Core programming language
+Spring Boot – Backend framework to build and run the REST API
+Spring Web – For creating RESTful services
+Spring Boot Starter – Dependency management
 
-# Technologies Used
-Spring Boot - Backend framework
+### Compression & Encryption
+Huffman Coding Algorithm – For lossless data compression
 
-Spring MVC - RESTful API handling
+### Build Tools
+Maven – Dependency and build management
 
-Spring Data JPA - Database interaction
+### Testing
+Postman – For testing APIs
 
-MySQL Database - Storage
 
 
-# API Endpoints
-# Method	      Endpoint	                         Description
-   GET	       /accounts	        ->           Get all account details
-   
-   POST	       /accounts	        ->           Create a new account
-   
-   PUT	      /accounts/{id}/deposit	   ->    Deposit money
-   
-   PUT	      /accounts/{id}/withdraw	   ->    Withdraw money
-   
-  DELETE	    /accounts/{id}/delete	   ->      Delete an account
