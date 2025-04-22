@@ -18,8 +18,11 @@ Post /api/compress/decompressText - Decompresses a file to it's original content
 ## Tech Stack
 ### Languages & Frameworks
 Java 17+ – Core programming language
+
 Spring Boot – Backend framework to build and run the REST API
+
 Spring Web – For creating RESTful services
+
 Spring Boot Starter – Dependency management
 
 ### Compression
