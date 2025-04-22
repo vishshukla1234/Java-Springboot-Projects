@@ -22,7 +22,7 @@ Spring Boot – Backend framework to build and run the REST API
 Spring Web – For creating RESTful services
 Spring Boot Starter – Dependency management
 
-### Compression & Encryption
+### Compression
 Huffman Coding Algorithm – For lossless data compression
 
 ### Build Tools
