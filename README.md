@@ -6,8 +6,8 @@ Welcome to my **Spring Boot Projects Repository**! This repository contains mult
 
 This repository includes multiple sub-projects. Each one is located in its own folder with a dedicated `README.md` that explains its purpose, structure.
 
-- `Banking Application` – e.g., Banking System API using Spring Boot
-- `FileCompressor` – e.g., File Compression with Huffman Coding Algorithm
+- `Banking Application` –  Banking System API using Spring Boot
+- `FileCompressor` –  File Compression with Huffman Coding Algorithm
 
 ## Tech Stack
 
