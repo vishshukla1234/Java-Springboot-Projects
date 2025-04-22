@@ -1,0 +1,19 @@
+File Compressor - Springboot
+
+This is a simple file compressor built using Spring Boot. It provides RESTful APIs to perform compression of a text file into it's binary code and decompression of the compressed file.
+
+
+Features
+  
+Compression - Compresses a text file.
+Decompression - Decompresses a file into it's original format.
+
+Technologies Used
+
+Spring Boot - Backend framework
+Spring MVC - RESTful API handling
+
+API Endpoints
+
+Get /api/compress/compressText - Compresses a file
+Post /api/compress/decompressText - Decompresses a file to it's original content
