@@ -9,22 +9,7 @@ This repository includes multiple sub-projects. Each one is located in its own f
 - `Banking Application` –  Banking System API using Spring Boot
 - `FileCompressor` –  File Compression with Huffman Coding Algorithm
 
-## Tech Stack
 
-### Languages & Frameworks
-Java 17+ – Core programming language
-Spring Boot – Backend framework to build and run the REST API
-Spring Web – For creating RESTful services
-Spring Boot Starter – Dependency management
-
-### Compression & Encryption
-Huffman Coding Algorithm – For lossless data compression
-
-### Build Tools
-Maven – Dependency and build management
-
-### Testing
-Postman – For testing APIs
 
 
 
