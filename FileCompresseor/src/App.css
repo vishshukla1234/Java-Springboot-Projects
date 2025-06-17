@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar {
+background: rgba( 255, 255, 255, 0.05 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 5px );
+-webkit-backdrop-filter: blur( 5px );
+border-radius: 1px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.nav-bar .navbar-brand {
+  color: #fff;
+  font-weight: bolder;
+  padding: 2px;
+  margin-left: 1rem;
+  border-bottom: none;
+}
+.nav-bar .navbar-brand:hover{
+  color: lightgray;
+  padding: 2px;
+  margin-left: 1rem;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; 
+}
+
+.main-div {
+  position: relative;
+  z-index: 1; /* Make sure content is above the video */
+  padding: 20px;
+}
+
+.main-text-h1{
+  color: gold;
+  font-size: larger;
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  font-family: 'Roboto';
+  font-weight: bold;
+  margin-right: 33rem;
+  margin-left: 31rem;
+  margin-top: -3rem;
+  text-shadow: 1px 1px 2px white, -1px -3px 2px #655665;
+  overflow: hidden;
+  /* animation: blink 0.75s infinite; */
+}
+
+.main-text .icon {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  animation: blink 1s infinite;
+  opacity: 50%;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20ch; 
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.filCompress {
+  display: flex;
+  justify-content: center;
+  padding: 35px;
+}
+
+
+.filCompress input {
+  background: rgba( 255, 255, 255, 0.05 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5px );
+  -webkit-backdrop-filter: blur( 5px );
+  border-radius: 5px;
+  border:2px solid darkred
+}
+.filCompress input:hover {
+  cursor: pointer;
+  background: rgba( 255, 255, 255, 0.05 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5px );
+  -webkit-backdrop-filter: blur( 5px );
+  border-radius: 5px;
+  border:2px solid darkred
+}
+.filDecompress {
+  display: flex;
+  justify-content: center;
+  padding: 35px;
+}
+
+.filDecompress .btn {
+  color: #fff;
+  padding: 1px;
+  width: 12rem;
+  margin-left: 2rem;
+  background: rgba( 255, 255, 255, 0.05 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5px );
+  -webkit-backdrop-filter: blur( 5px );
+  border-radius: 5px;
+  border:2px solid darkred
+}
+
+.filDecompress .btn:hover {
+  color: lightgray;
+  background-color:#655665;
+  cursor: pointer;
+}
+
+.filDecompress input {
+  background: rgba( 255, 255, 255, 0.05 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5px );
+  -webkit-backdrop-filter: blur( 5px );
+  border-radius: 5px;
+  border:2px solid darkred
+}
+.filDecompress input:hover {
+  cursor: pointer;
+  background: rgba( 255, 255, 255, 0.05 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5px );
+  -webkit-backdrop-filter: blur( 5px );
+  border-radius: 5px;
+  border:2px solid darkred
+}
+
+
+.btn-success{
+  color: #fff;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  width: 12rem;
+  margin-left: 34rem;
+  background: rgba( 255, 255, 255, 0.05 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5px );
+  -webkit-backdrop-filter: blur( 5px );
+  border-radius: 5px;
+  border:2px solid darkred;
+}
+.btn-success:hover{
+  color: lightgray;
+  background-color:#655665;
+  cursor: pointer;
+  margin-left: 34rem;
+  border: 5px;
+   transition: all 0.3s ease;
+}
+
+.download-section a {
+  display: flex;
+  text-decoration: none;
+}
+
+.status-msg {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+  .filCompress .btn {
+    color: #fff;
+    padding: 1px;
+    margin-left: 2rem;
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 5px;
+    border:2px solid darkred;
+  }
+  
+  .filCompress .btn:hover {
+    color: lightgray;
+    background-color:#655665;
+    cursor: pointer;
+  }
