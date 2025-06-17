@@ -28,4 +28,4 @@ Maven – Dependency and build management
 Postman – For testing APIs
 
 
-![UI][Gemini Chat-Bot/Screenshot 2025-06-17 135234.png]
+![UI][assets/UI.png]
