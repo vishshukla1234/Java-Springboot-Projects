@@ -6,7 +6,7 @@ Welcome to my **Spring Boot Projects Repository**! This repository contains mult
 
 This repository includes sub-projects. Each one is located in its own folder with a dedicated `README.md` that explains its purpose, structure.
 
-- `Banking Application` –  Banking System API using Spring Boot
+- `Gemini ChatBot` –  Gemini Chat-Bot(with Gemini API integrationn) using Spring Boot as backend and React & Bootstrap CSS for frontend
 - `FileCompressor` –  File Compression with Huffman Coding Algorithm
 
 
