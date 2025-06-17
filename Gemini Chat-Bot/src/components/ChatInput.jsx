@@ -5,10 +5,10 @@ const ChatInput = ({ onSubmit }) => {
     const [question, SetQuestion] = useState("")
 
     const handleSubmit = (e) => {
-        e.preventDefault() // prevents page from reloading
-        if(question.trim()) { //checks if question is not empty
-            onSubmit(question) //if not empty then updates the question status
-            SetQuestion("") // then again sets the question to empty string
+        e.preventDefault() 
+        if(question.trim()) { 
+            onSubmit(question) 
+            SetQuestion("") 
         }
     }
 
