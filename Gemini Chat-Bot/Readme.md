@@ -27,6 +27,7 @@ Maven – Dependency and build management
 ### Testing
 Postman – For testing APIs
 
-                                                    ##FRONTEND
+
+## FRONTEND
 
 ![UI](src/assets/UI.png)
