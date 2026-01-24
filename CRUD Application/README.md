@@ -1,12 +1,12 @@
-**CRUD Application – Spring Boot & React**
+****CRUD Application – Spring Boot & React****
 
 
-*📌 Overview*
+***📌 Overview***
 
 This is a full-stack CRUD (Create, Read, Update, Delete) application built using Spring Boot for the backend and React for the frontend. The application follows a clean MVC architecture and uses RESTful APIs for communication between frontend and backend.
 
 
-*🛠 Tech Stack: Backend*
+***🛠 Tech Stack: Backend***
 
 Java
 
@@ -20,14 +20,14 @@ REST APIs
 
 MySQL
 
-*🛠 Tech Stack: Frontend*
+***🛠 Tech Stack: Frontend***
 
 React
 
 Axios
 
 
-*⚙️ Features*
+***⚙️ Features***
 
 Create new records
 
@@ -44,7 +44,7 @@ Exception handling
 Clean layered architecture
 
 
-*🔗 API Endpoints*
+***🔗 API Endpoints***
 
 
 GET – Fetch all records
