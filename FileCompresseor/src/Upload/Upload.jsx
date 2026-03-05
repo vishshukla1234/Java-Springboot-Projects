@@ -37,7 +37,6 @@ const upload = () => {
       const url = URL.createObjectURL(blob);
       setDownloadURL(url);
 
-      // Set specific success message
       const successMsg = action === "compressText" 
         ? "File compressed successfully" 
         : "File decompressed successfully";
@@ -50,12 +49,6 @@ const upload = () => {
   };
 
   return (
-    <div className="">
-      <div className="absolute top-8 left-8">
-        <h1 className="text-2xl font-bold bg-gradient-to-r from-red-600 to-blue-700 bg-clip-text text-transparent">
-          {/* File Encryptor */}
-        </h1>
-      </div>
 
       <div className="file-input-box">
         
@@ -67,7 +60,6 @@ const upload = () => {
         />
         <label 
           htmlFor="file-input"
-          className="w-full border-2 border-dashed border-blue-900/50 rounded-2xl p-8 flex flex-col items-center justify-center cursor-pointer hover:bg-blue-900/10 transition-all group"
         >
           <div className="upload-icon">
             <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -97,7 +89,7 @@ const upload = () => {
 
         
         {status && (
-          <p className={`message ${status.includes("Error") ? "text-red-400" : "text-green-400"}`}>
+          <p className={`message ${status.includes("Error")}`}>
             {status}
           </p>
         )}
@@ -115,7 +107,6 @@ const upload = () => {
           </button>
         )}
       </div>
-    </div>
   );
 };
 
