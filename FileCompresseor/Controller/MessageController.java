@@ -1,27 +1,29 @@
-package com.SpringbootCompressor.FileCompressor.Controller;
+package com.MyProject.FileCompressor.Controller;
 
-import com.SpringbootCompressor.FileCompressor.Service.CompressionService;
+import com.MyProject.FileCompressor.Model.CompressionResponse;
+import com.MyProject.FileCompressor.Service.CompressionService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
+@CrossOrigin(origins = "http://localhost:5173")
 @RestController
-@RequestMapping("/api/compress")
+@RequestMapping("/api")
 public class MessageController {
-
     @Autowired
     private CompressionService compressionService;
+    private CompressionResponse compressionResponse;
 
-    // Compress text and return downloadable file
-    @PostMapping(value = "/compressText", consumes = "text/plain")
-    public ResponseEntity<byte[]> compressText(@RequestBody String text) {
-        return compressionService.compressText(text);
+    @PostMapping(value="/compressText", consumes = "multipart/form-data")
+    public ResponseEntity<byte []> compressText(@RequestParam("file") MultipartFile file) {
+        System.out.println("Compress endpoint hit. File name: " + file.getOriginalFilename());
+        return compressionService.compressText(file);
     }
 
-    // Decompress uploaded compressed data and return original file
-    @GetMapping("/decompressText")
-    public ResponseEntity<byte[]> decompressText(@RequestBody byte[] compressedData) {
-        return compressionService.decompressText(compressedData);
+    @PostMapping(value="/decompressText", consumes = "multipart/form-data")
+    public ResponseEntity<byte []> decompressText(@RequestParam("file") MultipartFile file) {
+        System.out.println("Received file with size: " + file.getSize());
+        return compressionService.decompressText(file);
     }
 }
