@@ -1,11 +1,9 @@
-package com.SpringbootCompressor.FileCompressor.Util;
+package com.MyProject.FileCompressor.Util;
 
-import java.io.*;
 import java.util.*;
 
 public class HuffmanCompressor {
-    private  Map<Character, String> huffmanCode = new HashMap<>();
-
+    private final Map<Character, String> huffmanCode = new HashMap<>();
 
     public byte[] compress(String text) {
         HuffNode root = buildFrequencyTable(text);
@@ -32,7 +30,7 @@ public class HuffmanCompressor {
         PriorityQueue<HuffNode> minHeap = new PriorityQueue<>();
 
         for(int i = 0; i < text.length(); i++) {
-            freqMap.put(text.charAt(i), freqMap.getOrDefault(text.charAt(i), 0)+1);
+            freqMap.put(text.charAt(i), freqMap.getOrDefault(text.charAt(i), 0) + 1);
         }
         for(Map.Entry<Character, Integer> entry: freqMap.entrySet()) {
             minHeap.add(new HuffNode(entry.getKey(), entry.getValue()));
@@ -41,14 +39,13 @@ public class HuffmanCompressor {
         while(minHeap.size() > 1) {
             HuffNode left = minHeap.poll();
             HuffNode right = minHeap.poll();
-            HuffNode merged = new HuffNode('\0', left.freq+ right.freq, left, right);
-            minHeap.add(merged);
+            HuffNode parent = new HuffNode('\0', left.frequency+right.frequency,left,right);
+            minHeap.add(parent);
         }
-
         return minHeap.poll();
     }
 
-    public static byte[] binaryStringToByteArray(String binary) {
+    private byte[] binaryStringToByteArray(String binary) {
         int byteLength = (binary.length() + 7) / 8;
         byte[] byteArray = new byte[byteLength];
 
@@ -56,7 +53,7 @@ public class HuffmanCompressor {
             int byteIndex = i / 8;
             int bitIndex = 7 - (i % 8);
             if (binary.charAt(i) == '1') {
-                byteArray[byteIndex] |= (1 << bitIndex);  //check this later
+                byteArray[byteIndex] |= (byte) (1 << bitIndex);
             }
         }
         return byteArray;
@@ -78,8 +75,7 @@ public class HuffmanCompressor {
                 binaryString.append((b >> i) & 1);
             }
         }
-
-        // Decode binary string using reverse code map
+        
         StringBuilder decoded = new StringBuilder();
         String temp = "";
         for (int i = 0; i < binaryString.length(); i++) {
@@ -91,10 +87,4 @@ public class HuffmanCompressor {
         }
         return decoded.toString();
     }
-
-
-    public Map<Character, String> getHuffmanCode() {
-        return huffmanCode;
-    }
-
 }
