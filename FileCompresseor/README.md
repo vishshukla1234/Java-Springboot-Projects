@@ -1,5 +1,5 @@
-## File Compressor - Springboot
-This is a simple file compressor built using Spring Boot. It provides RESTful APIs to perform compression of a text file into it's binary code and decompression of the compressed file.
+## HuffCrypt - Springboot
+This is a simple file compressor/encryptor built using Spring Boot. It provides RESTful APIs to perform compression of a text file into it's binary code and decompression of the compressed file.
 
 
 ### Features
