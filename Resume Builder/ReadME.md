@@ -1,6 +1,6 @@
 # 📄 Resume Builder Application (Spring Boot + JWT)
 
-A secure and scalable Resume Builder backend application built using **Spring Boot** and **Java**, featuring **JWT Authentication**, **User Management**, and **Email Verification using Brevo**.
+A secure and scalable Resume Builder backend application built using **Spring Boot** and **Java**, featuring **JWT Authentication**, **User Management**, **Email Verification using Brevo** and **Profile Image Upload Service** using cloudinary.
 
 ---
 
@@ -20,9 +20,10 @@ A secure and scalable Resume Builder backend application built using **Spring Bo
 
 - **Backend:** Spring Boot, Java
 - **Security:** Spring Security, JWT (JSON Web Token)
-- **Database:** MySQL / PostgreSQL (configurable)
-- **ORM:** Hibernate, Spring Data JPA
+- **Database:** MySQL
+- **ORM:** Spring Data JPA
 - **Email Service:** Brevo (Sendinblue API)
+- **Profile Image Upload Service:** Cloudinary
 - **Build Tool:** Maven
 
 ---
@@ -35,11 +36,3 @@ A secure and scalable Resume Builder backend application built using **Spring Bo
 4. User verifies email using link/token
 5. User logs in → receives JWT token
 6. Token is used for accessing secured APIs
-
----
-
-## ⚙️ Setup & Installation
-
-### 1. Clone the Repository
-
-```bash
