@@ -39,8 +39,7 @@ A modern, secure, and scalable URL Shortener platform built using **Spring Boot*
 - Render
 - Netlify
 
-```
-
+``
 ## 🔒 Authentication
 
 - User Registration
@@ -65,7 +64,7 @@ Users can monitor:
 
 **Vishal Shukla**
 
-LinkedIn: [https://linkedin.com/in/your-linkedin](https://www.linkedin.com/in/vishal-shukla-986016348/)
+LinkedIn: https://linkedin.com/in/vishal-shukla-986016348/
 
 GitHub: https://github.com/vishshukla1234
 
