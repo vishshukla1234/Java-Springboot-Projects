@@ -1,0 +1,35 @@
+@import "tailwindcss";
+.btn-gradient {
+  background: linear-gradient(to right, #3b82f6, #9333ea);
+}
+.btn-gradient:hover {
+  background: linear-gradient(to right, #3b82f6, #9333ea);
+  cursor: pointer;
+}
+
+.border-btnColor {
+    color: #3364F7;
+}
+
+/* Button styles */
+.custom-btn {
+  background-color: #4b34a8; /* bg-customRed (adjust to your actual value) */
+  background-image: linear-gradient(to right, #919adf, #454eb2); /* bg-custom-gradient */
+  color: white; /* text-white */
+  font-weight: 600; /* font-semiBold */
+  width: 100%; /* w-full */
+  padding: 8px 0; /* py-2 */
+  border-radius: 2px; /* rounded-sm */
+  margin: 12px 0; /* my-3 */
+  transition: color 0.1s ease; /* transition-colors duration-100 */
+  cursor: pointer;
+}
+
+/* Hover */
+.custom-btn:hover {
+  color: #80a3d3; /* text-slate-400 */
+}
+
+.text-btnColor{
+  color: #3364F7;
+}
