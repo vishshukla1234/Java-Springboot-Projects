@@ -38,7 +38,7 @@ A modern, secure, and scalable URL Shortener platform built using **Spring Boot*
 - Docker
 - Render
 - Netlify
-  ```
+
 ## 🔒 Authentication
 
 - User Registration
