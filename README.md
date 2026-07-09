@@ -8,7 +8,7 @@ This repository includes sub-projects. Each one is located in its own folder wit
 
 - `HuffCrypt` –  A DSA based project - File ecryption and decryption with Huffman Coding Algorithm(Greedy) in Java, Springboot, and React.js.
   
-- `ResumeForge` –  Resume Builder to register, login, and authenticate user and create, update, delete resume. Integerated JWT authentication and password encoder using BCrypt and email verification using brevo.
+- `ShortifyX` –  Built ShortifyX a bit.ly clone, a full-stack URL shortening platform enabling users to create, manage, and share shortened links with secure JWT-based authentication and authorization
   
 - `Gemini ChatBot` –  Gemini Chat-Bot(with Gemini API integrationn) using Spring Boot as backend and React & Bootstrap CSS for frontend.
   
