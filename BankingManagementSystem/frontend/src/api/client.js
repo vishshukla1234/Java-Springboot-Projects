@@ -60,7 +60,6 @@ export const api = {
   register: (payload) => request('/auth/register', { method: 'POST', body: payload, auth: false }),
   login: (payload) => request('/auth/login', { method: 'POST', body: payload, auth: false }),
 
-  // Users (admin only)
   getAllUsers: () => request('/users'),
   deleteUser: (id) => request(`/user/${id}`, { method: 'DELETE' }),
 
