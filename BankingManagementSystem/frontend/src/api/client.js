@@ -63,13 +63,11 @@ export const api = {
   getAllUsers: () => request('/users'),
   deleteUser: (id) => request(`/user/${id}`, { method: 'DELETE' }),
 
-  // Accounts
   createAccount: (payload) => request('/accounts', { method: 'POST', body: payload }),
   getAccount: (id) => request(`/accounts/${id}`),
   getMyAccounts: () => request('/accounts/my'),
   getAllAccounts: () => request('/accounts'),
 
-  // Transactions
   getAllTransactions: () => request('/transactions'),
   getTransactionById: (id) => request(`/transactions/${id}`),
   getTransactionsForAccount: (accountId) => request(`/transactions/account/${accountId}`),
