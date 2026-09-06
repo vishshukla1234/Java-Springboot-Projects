@@ -46,8 +46,6 @@ async function request(path, { method = 'GET', body, auth = true } = {}) {
   const data = isJson ? await res.json().catch(() => null) : await res.text().catch(() => '')
 
   if (!res.ok) {
-    // GlobalExceptionHandler returns { timestamp, status, error, message }.
-    // AuthController's bad-register path returns a plain string body instead.
     const message =
       (data && typeof data === 'object' && data.message) ||
       (typeof data === 'string' && data) ||
